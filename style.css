@@ -2,86 +2,65 @@ body{
     background-color: #F8EDE3;
     color: #444444;
     font: 17px;
-    padding: 30px;
+    padding: 0px;
     margin: 0px;
+    font-family: monospace;
+
+}
+.template {
+    padding: 25px 90px;
 }
 
 .container {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    font-family: monospace;
-}
-
-h1 { text-align: center;
-    font-family: monospace;
 }
 
 .navbar {
-    text-align: center;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Menyusun konten navbar di tengah secara horizontal */
 }
 
-.list-nav {
-    padding: 10px;
-    margin: 0px;
+h1, h2 { 
+    font-weight: bold;
+    text-align: center;
 }
-
-.list-nav li{
+    
+.list-nav li {
     display: inline-block;
     list-style: none;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 .list-nav a {
-    font-size: 15px;
-    color: rgb(0, 0, 0);      
+    color: rgb(0, 0, 0);      /* mengubah warna link di navbar */
 }
-.list-nav li a.active { color: #444444; }
-a:hover { color: #fefefe; }
+
+a:hover { color: #484848; }
 
 .content {
     font-size: 15px;
     text-align: center;
     background-color: #DFD3C3;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     padding-top: 20px;
 }
 
 .content_IMG{
     border-radius: 500%;
     float: left;
-    max-width: 30%;
+    max-width: 35%;
     margin: 10px 20px;
-    padding: 5px 5px;
+    padding: 5px;
 }
 
-img {
-    width: 80%;
-    height: 80%;
-    float: center;
-    display: flex;
-}
-
-.content-img {
-    width: 100%;
-}
-
-.content-text{
+/* .content-text{
     font-size: 20px;
     text-align: center;
-}
+} */
 
-.section {
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
-    font-family: monospace;
+.section {  
     text-align: center;
 }
 
@@ -94,13 +73,19 @@ img {
     text-align: center;
 }
 
-hr {
+.hr1 {
     width: 60%;
-    border: 1.5px solid #AEBDCA;
+    border: 1.5px solid #abbece;
+}
+
+.hr2 {
+    width: 100%;
+    border: 1.5px solid #abbece;
 }
 
 .responsive-table{
-    width: 100%;
+    margin: 10px 55px;
+    width: 90%;
     height: 100%;
 
 }
@@ -125,11 +110,13 @@ td {
     color: #444444;
 }
 
+.text-left { 
+    text-align: center;
+}
 
-.text-left { text-align: center;}
 tr:nth-child(odd) {background-color: #D0B8A8;}
 
- tr.tr-header {
+tr.tr-header {
     background-color: #AEBDCA;
     height: 50px;
 }
@@ -176,8 +163,8 @@ tr:nth-child(odd) {background-color: #D0B8A8;}
 .footer-main {
     background-color: #D0B8A8;
     color: black;
-    margin: 50px 0;
-    padding: 20px 0px;
+    width: 100%;
+    padding: 20px 0;
 }
   
 .footer-grid {
